@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	<title>Document</title>
+	<style>
+		.font-roboto {
+			font-family: "Roboto", serif;
+		}
+
+		.font-bebas {
+			font-family: "Bebas Neue", serif;
+		}
+	</style>
 </head>
-<body>
-	
+
+<body class="font-roboto">
+	<header class="bg-[#FFFBF0]">
+		<nav class="flex justify-between max-w-7xl mx-auto py-5">
+			<div class="w-64">
+				<img src="./icons/logo.png" alt="">
+			</div>
+			<div>
+				<ul class="flex gap-5 text-[#3C3C3C]">
+					<li><a href="">Home</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="flex justify-between max-w-7xl mx-auto items-center flex-col sm:flex-row">
+			<div>
+				<h1 class="text-7xl uppercase font-bebas"><span class="text-[#FABE4C] mb-5">Be the Penguins</span><br><span
+						class="text-[#363958]">of Winter</span>
+				</h1>
+				<p class="text-base text-[#3E3E3E] mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+					Ratione
+					modi aliquam pariatur. Nihil.</p>
+				<button
+					class="flex gap-5 items-center py-4 px-8 bg-linear-to-r from-[#A4BC46] to-[#85A019] rounded-lg text-white"><img
+						class="w-10" src="./icons/shopping-cart 1.png" alt="">BUY
+					NOW</button>
+			</div>
+			<div>
+				<img src="./images/model.png" alt="">
+			</div>
+		</div>
+	</header>
+
 </body>
+
 </html>
